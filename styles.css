@@ -1,0 +1,128 @@
+body {
+  background-color: #fae7d2;
+}
+button {
+  border: none;
+  background: none;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+}
+.header {
+  background-color: #f3c38f;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+.navbar li a:hover {
+  color: #088178;
+}
+.navbar li a:hover::after {
+  content: "";
+  width: 3%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.navbar li a.active {
+  color: #088178;
+}
+.navbar li a.active::after {
+  content: "";
+  width: 3%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.footerLogo {
+  height: 175px;
+}
+.Intro {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Intro h1 {
+  color: #088178;
+}
+.indexMenuButton {
+  display: flex;
+  background-image: url("images/button.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 140px;
+}
+.MenuPage {
+  padding: 50px;
+}
+.menuPageButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  background-color: #088178;
+}
+.backToHome {
+  font-size: 20px;
+  font-weight: 700;
+  color: #088178;
+}
+.addButton {
+  font-size: 20px;
+  font-weight: 700;
+  color: #088178;
+}
+.editItemPage {
+  padding: 0 50px;
+}
+.deleteDialog {
+  height: 15vh;
+  margin: auto;
+  color: #088178;
+  background-color: #f3c38f;
+  border-radius: 10px;
+}
+.deleteDialogButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.deleteDialogButtons button {
+  color: #088178;
+}
+@media screen and (min-width: 992px) {
+  .navbar li a:hover::after {
+    width: 25%;
+    bottom: -4px;
+    left: 28px;
+  }
+  .navbar li a.active::after {
+    width: 25%;
+    bottom: -4px;
+    left: 28px;
+  }
+}

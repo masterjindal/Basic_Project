@@ -1,0 +1,146 @@
+@text_color: #1a1a1a;
+@primary_color: #088178;
+@secondary_color_1: #fae7d2;
+@secondary_color_2: #f3c38f;
+
+@sizes: {
+  laptop: 992px;
+};
+
+.hover-active-after-tablet () {
+  color: @primary_color;
+  &::after {
+    content: "";
+    width: 3%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+}
+
+.hover-active-after () {
+  &::after {
+    width: 25%;
+    bottom: -4px;
+    left: 28px;
+  }
+}
+
+body {
+  background-color: @secondary_color_1;
+}
+
+button {
+  border: none;
+  background: none;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+}
+.header {
+  background-color: @secondary_color_2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.navbar {
+  li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: @text_color;
+      transition: 0.3s ease;
+      &:hover {
+        .hover-active-after-tablet();
+      }
+    }
+    a.active {
+      .hover-active-after-tablet();
+    }
+  }
+}
+.navbar-toggler {
+  border: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.footerLogo {
+  height: 175px;
+}
+.Intro {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: @primary_color;
+  }
+}
+.indexMenuButton {
+  display: flex;
+  background-image: url("images/button.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 140px;
+}
+.MenuPage {
+  padding: 50px;
+}
+.menuPageButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  background-color: @primary_color;
+}
+.backToHome {
+  font-size: 20px;
+  font-weight: 700;
+  color: @primary_color;
+}
+.addButton {
+  font-size: 20px;
+  font-weight: 700;
+  color: @primary_color;
+}
+.editItemPage {
+  padding: 0 50px;
+}
+.deleteDialog {
+  height: 15vh;
+  margin: auto;
+  color: @primary_color;
+  background-color: @secondary_color_2;
+  border-radius: 10px;
+}
+.deleteDialogButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    color: @primary_color;
+  }
+}
+
+@media screen and (min-width: @sizes[laptop]) {
+  .navbar {
+    li {
+      a {
+        &:hover {
+          .hover-active-after();
+        }
+      }
+      a.active {
+        .hover-active-after();
+      }
+    }
+  }
+}

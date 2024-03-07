@@ -1,0 +1,8 @@
+[
+{"Id":1, "Name": "Christmas pie", "Flavour": "Chocolate", "Price":"500", "Available": "Yes"},
+{"Id":2, "Name": "Simmer-&-stir cake", "Flavour": "Fruit", "Price":"350", "Available": "Yes"},
+{"Id":3, "Name": "Cupcakes", "Flavour": "Strawberry", "Price":"350", "Available": "Yes"},
+{"Id":4, "Name": "Buns", "Flavour": "No", "Price":"100", "Available": "Yes"},
+{"Id":6, "Name": "Slaw", "Flavour": "Chocolate", "Price":"350", "Available": "Yes"},
+{"Id":8, "Name": "Brownies", "Flavour": "Chocolate", "Price":"200", "Available": "Yes"}
+]
