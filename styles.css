@@ -100,10 +100,8 @@ button {
   padding: 0 50px;
 }
 .deleteDialog {
-  height: 15vh;
-  margin: auto;
+  border-color: #ffffff;
   color: #088178;
-  background-color: #f3c38f;
   border-radius: 10px;
 }
 .deleteDialogButtons {
